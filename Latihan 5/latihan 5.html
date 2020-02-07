@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style media="screen">
+            .container{
+                width: 50%;
+                height: 200px;
+                overflow: auto;
+                margin-left: 0 auto;
+            }
+            .static{ position: static; border: 2px solid green;}
+            .relative{
+                position: relative;
+                border: 2px solid red;
+                left: 20px; /* jarak dari posisi paling kiri sebesar 20px */
+                bottom: 0; /* jarak dari posisi paling bawah sebesar 0px */
+            }
+            .absolute{ position: absolute; border: 2px solid blue; left: 20px; bottom: 40px;}
+            .fixed{position: fixed; border: 2px solid black; bottom: 0; right: 0;}
+            .sticky{
+                position: sticky;
+                border: 2px solid yellow;
+                top: 0;
+                left: 20px;
+                background: darkblue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p class="sticky">
+                Ini adalah contoh dari posisi sticky
+            </p>
+
+            <p class="static">
+                <b>Ini adalah contoh dari position static</b> <br>
+                Some manufacturers still make mechanical switch keyboards that feel like the classic IBM Model M, and if you spend a great deal of time at the PC keyboard, it might be worth your while to switch out your membrane keyboard for a mechanical one. It's possible that a mechanical keyboard could help you type more quickly and more accurately, and it will last far longer than a standard PC pack-in keyboard. It may also just bring you a more satisfying writing experience.
+            </p>
+
+            <p class="relative">
+                <b>Ini adalah contoh dari position relative</b> <br>
+                Most PC keyboards are composed of a set of three plastic membranes, with rubber dome-shaped switches underneath each key. Press a key, and the rubber switch pushes through a hole in the middle membrane to connect the top and bottom membranes, which creates an electrical circuit that causes the keyboard to send the input to your PC. This keyboard design is inexpensive and spill-resistant, but it doesn't give you as much tactile or audible feedback when you press a key, which can change the way you type.
+            </p>
+
+            <p class="absolute">
+                <b>Ini adalah contoh dari position absolute</b> <br>
+                Mechanical keyboards might make you type differently. Membrane keyboards require you to press the key down as far as it will go to complete the electrical circuit. With mechanical keyboards, you only have to press until you hear the click, which means that the key travels a shorter distance.
+            </p>
+
+            <p class="fixed">
+                Ini merupakan contoh dari position fixed
+            </p>
+        </div>
+    </body>
+</html>
